@@ -4,12 +4,6 @@ import { downloadImage } from '../utils'
 
 const Card = ({ _id, name, photo, prompt }) => {
     return (
-        // <div className='flex flex-col p-3 rounded-md bg-[#6a69ff] gap-2'>
-        //     <img src={photo} alt={prompt} />
-        //     <h2><span className="font-bold">Author:</span> {name}</h2>
-        //     <p className="leading-5"><span className="font-bold truncate">Prompt:</span> {prompt}</p>
-        // </div>
-
         <div className='card rounded-md group relative shadow-card hover:shadow-cardhover bg-[#6a69ff] '>
             <img src={photo} alt={prompt}
                 className="w-full h-auto object-cover rounded-md" />
