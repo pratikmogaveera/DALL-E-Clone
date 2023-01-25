@@ -41,7 +41,6 @@ const CreatePost = () => {
     }
 
     const handleChange = (e) => {
-        // console.log(e.target.name, e.target.value)
         setForm({ ...form, [e.target.name]: e.target.value })
     }
 
@@ -77,7 +76,7 @@ const CreatePost = () => {
     return (
         <section className='max-w-7xl mx-auto'>
             <div>
-                <h1 className='font-extrabold text-[#222328] text-[2em]'>
+                <h1 className='font-extrabold text-[2em]'>
                     Create
                 </h1>
 
@@ -108,7 +107,7 @@ const CreatePost = () => {
                     />
                 </div>
 
-                <div className="relative mx-auto mt-10 bg-gray-50 border-[3px] border-gray-300 text-md text-gray-900 rounded-md focus:ring-blue-500 focus:broder-blue-500 w-64 p-3 h-64 flex justify-center items-center">
+                <div className="relative preview-img mx-auto mt-10 border-[3px] border-gray-300 text-md text-gray-900 rounded-md focus:ring-blue-500 focus:broder-blue-500 w-64 p-3 h-64 flex justify-center items-center">
                     {form.photo ? (
                         <img
                             src={form.photo}

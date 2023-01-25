@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --body-bg: #f9fafe;
+    --header-bg: white;
+    --header-border: #e6ebf4;
+    --theme-button-bg: white;
+    --theme-button-hover: #a1a1a1;
+    --h1: #222328;
+    --label-heading: rgb(17, 24, 39);
+    --input-border: rgb(209 213 219);
+    --input-bg: rgb(249 250 251);
+    --input-text: black;
+}
+
 * {
     font-family: 'Inter', sans-serif;
 }
@@ -20,4 +33,48 @@
 .prompt::-webkit-scrollbar-thumb {
     background-color: #666e75;
     border-radius: 5px;
+}
+
+html,
+body {
+    background-color: var(--body-bg);
+}
+
+h1 {
+    color: var(--h1);
+}
+
+.main-header {
+    background: linear-gradient(81deg, rgba(148,113,255,1) 0%, rgba(252,162,162,1) 100%);
+    /* background-color: var(--header-bg); */
+    object-fit:cover;
+    background-size: 100%;
+    border-color: var(--header-border);
+}
+
+.main-body {
+    background-color: var(--body-bg);
+}
+
+.theme-button {
+    background-color: var(--theme-button-bg);
+}
+
+.theme-button:hover, .theme-button:active {
+    background-color: var(--theme-button-hover);
+}
+
+.label-field {
+    color: var(--label-heading);
+}
+
+.input-field {
+    background-color: var(--input-bg);
+    border: solid 3px var(--input-border);
+    color: var(--input-text);
+    outline: none;
+}
+
+.preview-img {
+    background-color: var(--header-border)
 }
